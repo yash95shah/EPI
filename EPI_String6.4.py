@@ -13,7 +13,7 @@ def countReplacedArray(arr):
 	write_idx += a_idx - 1
 
 	while current_idx > 0:
-		if arr[current_idx] == 'a':
+		if arr[current_	idx] == 'a':
 			arr[write_idx - 1 : write_idx + 1 ] = 'dd'
 			write_idx -=1
 		else:
