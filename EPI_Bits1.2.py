@@ -1,10 +1,10 @@
-def swap_bits(x, i, j):
-  if x<<i&1 != x<<j&j:
-    bit_mask = i|j<<1
-    x ^= bit_mask
-  return x
-
-
+def swap_bits(number, index1, index2):
+  #First check if both bits are the same and if they are, just return original number
+  if number >> index1 & 1 != number >> index2 & 1:
+    #Let's select a bitmask that will help flip the number
+    bit_mask = index1|index2 << 1
+    number ^= bit_mask
+  return number 
 
 
 
